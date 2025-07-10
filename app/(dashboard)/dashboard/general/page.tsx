@@ -10,6 +10,8 @@ import { updateAccount } from '@/app/(login)/actions';
 import { User } from '@/lib/db/schema';
 import useSWR from 'swr';
 import { Suspense } from 'react';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -72,6 +74,33 @@ function AccountFormWithData({ state }: { state: ActionState }) {
   );
 }
 
+function SetTheme() {
+  const { theme, setTheme } = useTheme()
+
+  return (
+    <form>
+      <RadioGroup
+        defaultValue={theme}
+        name="role"
+        className="flex space-x-4"
+      >
+        <div className="flex items-center space-x-2 mt-2">
+          <RadioGroupItem value='light' id='light' onClick={() => setTheme('light')} />
+          <Label htmlFor="light">Light</Label>
+        </div>
+        <div className="flex items-center space-x-2 mt-2">
+          <RadioGroupItem value='dark' id='dark' onClick={() => setTheme('dark')} />
+          <Label htmlFor="dark">Dark</Label>
+        </div>
+        <div className="flex items-center space-x-2 mt-2">
+          <RadioGroupItem value='default' id='default' onClick={() => setTheme('default')} />
+          <Label htmlFor="default">System</Label>
+        </div>
+      </RadioGroup>
+    </form>
+  )
+}
+
 export default function GeneralPage() {
   const [state, formAction, isPending] = useActionState<ActionState, FormData>(
     updateAccount,
@@ -83,6 +112,15 @@ export default function GeneralPage() {
       <h1 className="text-lg lg:text-2xl font-medium text-gray-900 mb-6">
         General Settings
       </h1>
+
+      <Card className='mb-8'>
+        <CardHeader>
+          <CardTitle>Theme</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <SetTheme />
+        </CardContent>
+      </Card>
 
       <Card>
         <CardHeader>
