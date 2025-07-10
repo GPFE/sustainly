@@ -242,7 +242,7 @@ function InviteTeamMember() {
           )}
           <Button
             type="submit"
-            className="bg-orange-500 hover:bg-orange-600 text-white"
+            className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-600 dark:hover:bg-orange-700"
             disabled={isInvitePending || !isOwner}
           >
             {isInvitePending ? (
@@ -252,7 +252,7 @@ function InviteTeamMember() {
               </>
             ) : (
               <>
-                <PlusCircle className="mr-2 h-4 w-4" />
+                <PlusCircle className="mr-2 h-4 w-4 dark:text-white" />
                 Invite Member
               </>
             )}

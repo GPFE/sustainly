@@ -35,7 +35,7 @@ export default function SecurityPage() {
 
   return (
     <section className="flex-1 p-4 lg:p-8">
-      <h1 className="text-lg lg:text-2xl font-medium bold text-gray-900 mb-6">
+      <h1 className="text-lg lg:text-2xl font-medium bold text-gray-900 dark:text-gray-100 mb-6">
         Security Settings
       </h1>
       <Card className="mb-8">
@@ -96,17 +96,17 @@ export default function SecurityPage() {
             )}
             <Button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-600 dark:hover:bg-orange-700"
               disabled={isPasswordPending}
             >
               {isPasswordPending ? (
                 <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin dark:text-white" />
                   Updating...
                 </>
               ) : (
                 <>
-                  <Lock className="mr-2 h-4 w-4" />
+                  <Lock className="mr-2 h-4 w-4 dark:text-white" />
                   Update Password
                 </>
               )}
@@ -120,7 +120,7 @@ export default function SecurityPage() {
           <CardTitle>Delete Account</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-gray-500 mb-4">
+          <p className="text-sm dark:text-gray-400 text-gray-500 mb-4">
             Account deletion is non-reversable. Please proceed with caution.
           </p>
           <form action={deleteAction} className="space-y-4">
@@ -144,7 +144,7 @@ export default function SecurityPage() {
             <Button
               type="submit"
               variant="destructive"
-              className="bg-red-600 hover:bg-red-700"
+              className="bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 text-white"
               disabled={isDeletePending}
             >
               {isDeletePending ? (

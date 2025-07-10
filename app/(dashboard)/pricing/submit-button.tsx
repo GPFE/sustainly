@@ -12,7 +12,7 @@ export function SubmitButton() {
       type="submit"
       disabled={pending}
       variant="outline"
-      className="w-full rounded-full"
+      className="w-full rounded-full dark:text-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
     >
       {pending ? (
         <>

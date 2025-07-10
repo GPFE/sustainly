@@ -75,25 +75,26 @@ function AccountFormWithData({ state }: { state: ActionState }) {
 }
 
 function SetTheme() {
-  const { theme, setTheme } = useTheme()
+  const themeName = localStorage.getItem('theme') || 'default'
+  const { setTheme } = useTheme();
 
   return (
     <form>
       <RadioGroup
-        defaultValue={theme}
+        defaultValue={themeName}
         name="role"
         className="flex space-x-4"
       >
-        <div className="flex items-center space-x-2 mt-2">
-          <RadioGroupItem value='light' id='light' onClick={() => setTheme('light')} />
+        <div className="flex items-center space-x-2 mt-2 dark:text-white">
+          <RadioGroupItem value='light' id='light' onClick={() => setTheme('light')} className='dark:bg-gray-800' />
           <Label htmlFor="light">Light</Label>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <RadioGroupItem value='dark' id='dark' onClick={() => setTheme('dark')} />
+          <RadioGroupItem value='dark' id='dark' onClick={() => setTheme('dark')} className='dark:bg-gray-800' />
           <Label htmlFor="dark">Dark</Label>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <RadioGroupItem value='default' id='default' onClick={() => setTheme('default')} />
+          <RadioGroupItem value='default' id='default' onClick={() => setTheme('default')} className='dark:bg-gray-800' />
           <Label htmlFor="default">System</Label>
         </div>
       </RadioGroup>
@@ -109,7 +110,7 @@ export default function GeneralPage() {
 
   return (
     <section className="flex-1 p-4 lg:p-8">
-      <h1 className="text-lg lg:text-2xl font-medium text-gray-900 mb-6">
+      <h1 className="text-lg lg:text-2xl font-medium text-gray-900 dark:text-gray-100 mb-6">
         General Settings
       </h1>
 
@@ -139,7 +140,7 @@ export default function GeneralPage() {
             )}
             <Button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-600 dark:hover:bg-orange-700"
               disabled={isPending}
             >
               {isPending ? (

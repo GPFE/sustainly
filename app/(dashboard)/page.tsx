@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-              <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight sm:text-5xl md:text-6xl">
                 Build Your SaaS
                 <span className="block text-orange-500">Faster Than Ever</span>
               </h1>
@@ -26,7 +26,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="text-lg rounded-full"
+                    className="dark:hover:bg-gray-700 dark:text-gray-100 dark:bg-gray-800 text-lg rounded-full"
                   >
                     Deploy your own
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -41,9 +41,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white w-full">
+      <section className="py-16 dark:bg-gray-900 bg-white w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
+          <div className="lg:grid lg:grid-cols-3 lg:gap-8 dark:bg-gray-800 rounded-lg dark:pt-6 dark:px-6 dark:pb-8">
             <div>
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
                 <svg viewBox="0 0 24 24" className="h-6 w-6">
@@ -54,10 +54,10 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
+                <h2 className="text-lg font-medium dark:text-gray-100 text-gray-900">
                   Next.js and React
                 </h2>
-                <p className="mt-2 text-base text-gray-500">
+                <p className="mt-2 text-base dark:text-gray-400 text-gray-500">
                   Leverage the power of modern web technologies for optimal
                   performance and developer experience.
                 </p>
@@ -69,10 +69,10 @@ export default function HomePage() {
                 <Database className="h-6 w-6" />
               </div>
               <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
+                <h2 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                   Postgres and Drizzle ORM
                 </h2>
-                <p className="mt-2 text-base text-gray-500">
+                <p className="mt-2 text-base dark:text-gray-400 text-gray-500">
                   Robust database solution with an intuitive ORM for efficient
                   data management and scalability.
                 </p>
@@ -84,10 +84,10 @@ export default function HomePage() {
                 <CreditCard className="h-6 w-6" />
               </div>
               <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
+                <h2 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                   Stripe Integration
                 </h2>
-                <p className="mt-2 text-base text-gray-500">
+                <p className="mt-2 text-base dark:text-gray-400 text-gray-500 dark:text-gray-400">
                   Seamless payment processing and subscription management with
                   industry-leading Stripe integration.
                 </p>
@@ -97,14 +97,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
                 Ready to launch your SaaS?
               </h2>
-              <p className="mt-3 max-w-3xl text-lg text-gray-500">
+              <p className="mt-3 max-w-3xl text-lg text-gray-500 dark:text-gray-400">
                 Our template provides everything you need to get your SaaS up
                 and running quickly. Don't waste time on boilerplate - focus on
                 what makes your product unique.
@@ -115,7 +115,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg rounded-full"
+                  className="text-lg rounded-full dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:bg-opacity-10"
                 >
                   View the code
                   <ArrowRight className="ml-3 h-6 w-6" />

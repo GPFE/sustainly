@@ -19,8 +19,8 @@ export default async function PricingPage() {
   const plusPrice = prices.find((price) => price.productId === plusPlan?.id);
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="grid md:grid-cols-2 gap-8 max-w-xl mx-auto">
+    <main className="dark:bg-gray-900 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="grid md:grid-cols-2 gap-8 max-w-xl mx-auto dark:text-gray-400">
         <PricingCard
           name={basePlan?.name || 'Base'}
           price={basePrice?.unitAmount || 800}
@@ -66,22 +66,22 @@ function PricingCard({
   priceId?: string;
 }) {
   return (
-    <div className="pt-6">
-      <h2 className="text-2xl font-medium text-gray-900 mb-2">{name}</h2>
-      <p className="text-sm text-gray-600 mb-4">
+    <div className="pt-6 dark:bg-gray-800 dark:rounded-lg dark:px-6 dark:pb-8">
+      <h2 className="text-2xl font-medium dark:text-gray-100 text-gray-900 mb-2">{name}</h2>
+      <p className="text-sm text-gray-600 mb-4 dark:text-gray-400">
         with {trialDays} day free trial
       </p>
-      <p className="text-4xl font-medium text-gray-900 mb-6">
+      <p className="text-4xl font-medium text-gray-900 dark:text-gray-100 mb-6">
         ${price / 100}{' '}
-        <span className="text-xl font-normal text-gray-600">
+        <span className="text-xl font-normal text-gray-600 dark:text-gray-400">
           per user / {interval}
         </span>
       </p>
-      <ul className="space-y-4 mb-8">
+      <ul className="space-y-4 mb-8 dark:text-gray-400">
         {features.map((feature, index) => (
-          <li key={index} className="flex items-start">
-            <Check className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
-            <span className="text-gray-700">{feature}</span>
+          <li key={index} className="dark:text-gray-300 flex items-start">
+            <Check className="h-5 w-5 text-orange-500 dark:text-orange-400 mr-2 mt-0.5 flex-shrink-0" />
+            <span className="text-gray-700 dark:text-gray-300">{feature}</span>
           </li>
         ))}
       </ul>
