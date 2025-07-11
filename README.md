@@ -1,3 +1,13 @@
+# Provedené změny:
+- vytvořen `ThemeProvider` jako **klientská komponenta**
+- přidána komponenta **`ThemeSwitch`** pro přepínání motivu
+- upraveny **vlastní motivy** (barvy, styly)
+- modifikace souboru **`globals.css`**
+- přidáno **SVG logo** s barevnými variantami výplně textu
+
+https://github.com/user-attachments/assets/f116feb3-a9b9-4552-a9ff-269712b213af
+
+
 # Next.js SaaS Starter
 
 This is a starter template for building a SaaS application using **Next.js** with support for authentication, Stripe integration for payments, and a dashboard for logged-in users.
