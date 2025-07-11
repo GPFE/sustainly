@@ -5,7 +5,8 @@
 - modifikace souboru **`globals.css`**
 - přidáno **SVG logo** s barevnými variantami výplně textu
 
-https://github.com/user-attachments/assets/f116feb3-a9b9-4552-a9ff-269712b213af
+https://github.com/user-attachments/assets/8c60458e-ce83-4d96-9ccb-799ba00ab78e
+
 
 
 # Next.js SaaS Starter
