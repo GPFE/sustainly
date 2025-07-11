@@ -80,7 +80,7 @@ function PricingCard({
       <ul className="space-y-4 mb-8 dark:text-gray-400">
         {features.map((feature, index) => (
           <li key={index} className="dark:text-gray-300 flex items-start">
-            <Check className="h-5 w-5 text-orange-500 dark:text-orange-400 mr-2 mt-0.5 flex-shrink-0" />
+            <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
             <span className="text-gray-700 dark:text-gray-300">{feature}</span>
           </li>
         ))}

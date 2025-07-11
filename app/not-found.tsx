@@ -3,12 +3,12 @@ import { CircleIcon } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="flex items-center justify-center min-h-[100dvh]">
-      <div className="max-w-md space-y-8 p-4 text-center">
+    <div className="flex items-center justify-center min-h-[100dvh] dark:bg-gray-900">
+      <div className="max-w-md space-y-8 p-4 text-center dark:bg-gray-800 dark:rounded-lg">
         <div className="flex justify-center">
-          <CircleIcon className="size-12 text-orange-500" />
+          <CircleIcon className="size-12 text-green-500 dark:text-green-400" />
         </div>
-        <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
+        <h1 className="text-4xl font-bold text-gray-900 tracking-tight dark:text-gray-100">
           Page Not Found
         </h1>
         <p className="text-base text-gray-500">
@@ -17,7 +17,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="max-w-48 mx-auto flex justify-center py-2 px-4 border border-gray-300 rounded-full shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+          className="max-w-48 mx-auto flex justify-center py-2 px-4 border border-gray-300 rounded-full shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
         >
           Back to Home
         </Link>

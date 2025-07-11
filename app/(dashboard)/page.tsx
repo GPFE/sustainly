@@ -5,15 +5,15 @@ import { Terminal } from './terminal';
 export default function HomePage() {
   return (
     <main>
-      <section className="py-20">
+      <section className="py-20 bg-blue-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-              <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-bold text-gray-100 tracking-tight sm:text-5xl md:text-6xl">
                 Build Your SaaS
-                <span className="block text-orange-500">Faster Than Ever</span>
+                <span className="block text-purple-secondary">Faster Than Ever</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 Launch your SaaS product in record time with our powerful,
                 ready-to-use template. Packed with modern technologies and
                 essential integrations.
@@ -26,10 +26,10 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="dark:hover:bg-gray-700 dark:text-gray-100 dark:bg-gray-800 text-lg rounded-full"
+                    className="text-lg rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-700 hover:translate-y-1"
                   >
                     Deploy your own
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-tr rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1" />
                   </Button>
                 </a>
               </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-3 lg:gap-8 dark:bg-gray-800 rounded-lg dark:pt-6 dark:px-6 dark:pb-8">
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
                 <svg viewBox="0 0 24 24" className="h-6 w-6">
                   <path
                     fill="currentColor"
@@ -65,7 +65,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-primary text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
                 <Database className="h-6 w-6" />
               </div>
               <div className="mt-5">
@@ -80,7 +80,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
                 <CreditCard className="h-6 w-6" />
               </div>
               <div className="mt-5">
@@ -97,11 +97,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-blue-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl">
+              <h2 className="text-3xl font-bold text-gray-100 sm:text-4xl">
                 Ready to launch your SaaS?
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500 dark:text-gray-400">
@@ -115,10 +115,11 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg rounded-full dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:bg-opacity-10"
+                  className="text-lg rounded-full dark:text-gray-100 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-700"
                 >
                   View the code
-                  <ArrowRight className="ml-3 h-6 w-6" />
+                  <ArrowRight
+                    style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-tr rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1" />
                 </Button>
               </a>
             </div>
