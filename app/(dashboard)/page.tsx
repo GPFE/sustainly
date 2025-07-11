@@ -29,7 +29,7 @@ export default function HomePage() {
                     className="text-lg rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-700 hover:translate-y-1"
                   >
                     Deploy your own
-                    <ArrowRight style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-tr rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1" />
+                    <ArrowRight style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-br rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1 text-white" />
                   </Button>
                 </a>
               </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-3 lg:gap-8 dark:bg-gray-800 rounded-lg dark:pt-6 dark:px-6 dark:pb-8">
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-br from-green-gradient to-blue-gradient">
                 <svg viewBox="0 0 24 24" className="h-6 w-6">
                   <path
                     fill="currentColor"
@@ -65,7 +65,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-primary text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-primary text-white bg-linear-to-br from-green-gradient to-blue-gradient">
                 <Database className="h-6 w-6" />
               </div>
               <div className="mt-5">
@@ -80,7 +80,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-tr from-green-gradient to-blue-gradient">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md text-white bg-linear-to-br from-green-gradient to-blue-gradient">
                 <CreditCard className="h-6 w-6" />
               </div>
               <div className="mt-5">
@@ -119,7 +119,7 @@ export default function HomePage() {
                 >
                   View the code
                   <ArrowRight
-                    style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-tr rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1" />
+                    style={{ height: "1.5rem", width: "1.5rem" }} className="bg-linear-to-br rounded-full p-1 from-green-gradient to-blue-gradient w-7 h-7 ml-1 text-white" />
                 </Button>
               </a>
             </div>
